@@ -20,15 +20,6 @@ jobs:
           cache: yarn
           node-version: 18
 
-      - name: Setup .yarnrc.yml
-        run: |
-          yarn config set npmScopes.fortawesome.npmRegistryServer $FA_REPO_URL
-          yarn config set npmScopes.fortawesome.npmAlwaysAuth true
-          yarn config set npmScopes.fortawesome.npmAuthIdent $FA_TOKEN
-        env:
-          FA_REPO_URL: ${{ secrets.FA_REPO_URL }}
-          FA_TOKEN: ${{ secrets.FA_TOKEN }}
-
       - name: Install dependencies
         run: yarn install
         env:
