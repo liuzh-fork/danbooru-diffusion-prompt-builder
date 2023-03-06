@@ -26,11 +26,11 @@ import {
     faClipboard,
     faThumbsDown,
     faThumbsUp,
-} from '@fortawesome/pro-light-svg-icons'
+} from '@fortawesome/free-solid-svg-icons'
 import {
     faCloudArrowDown,
-    faImageSlash,
-} from '@fortawesome/pro-regular-svg-icons'
+    faEyeSlash,
+} from '@fortawesome/free-solid-svg-icons'
 import type { Embedding } from '../types/data'
 import { useCartStore } from '../stores/cart'
 import ToggleableTag from './ToggleableTag.vue'
@@ -98,7 +98,7 @@ function toggleNegative(tag: string = prompt.value) {
             <ElImage :src="imageUrl" fit="cover" loading="lazy">
                 <template #error>
                     <div class="image-slot">
-                        <FontAwesomeIcon :icon="faImageSlash" size="lg" />
+                        <FontAwesomeIcon :icon="faEyeSlash" size="lg" />
                     </div>
                 </template>
             </ElImage>

@@ -20,8 +20,11 @@
 <script lang="ts" setup>
 import {ElButton, ElSwitch, ElScrollbar} from 'element-plus'
 import {FontAwesomeIcon} from '@fortawesome/vue-fontawesome'
-import {faEye, faEyeSlash, faClipboard, faThumbsDown, faThumbsUp, faLightbulbOn, faLightbulbSlash} from '@fortawesome/pro-light-svg-icons'
-import {faCircleMinus, faCirclePlus, faTrash, faThumbsDown as faThumbsDownRegular, faThumbsUp as faThumbsUpRegular, faBlender as faBlenderRegular} from '@fortawesome/pro-regular-svg-icons'
+import {faEye, faEyeSlash, faClipboard, faThumbsDown, faThumbsUp, faLightbulb} from '@fortawesome/free-solid-svg-icons'
+import {
+    faLightbulb as faLightbulbSlash
+} from '@fortawesome/free-regular-svg-icons'
+import {faCircleMinus, faCirclePlus, faTrash, faThumbsDown as faThumbsDownRegular, faThumbsUp as faThumbsUpRegular, faBlender as faBlenderRegular} from '@fortawesome/free-solid-svg-icons'
 import {useSettingsStore} from '../stores/settings'
 import {useTagStore} from '../stores/tags'
 import {usePresetStore} from '../stores/presets'
@@ -43,7 +46,7 @@ const hypernetworkStore = useHypernetworkStore()
 
 const activeIcon = h(FontAwesomeIcon, { icon: faEye })
 const inactiveIcon = h(FontAwesomeIcon, { icon: faEyeSlash })
-const lightIcon = h(FontAwesomeIcon, { icon: faLightbulbOn })
+const lightIcon = h(FontAwesomeIcon, { icon: faLightbulb })
 const darkIcon = h(FontAwesomeIcon, { icon: faLightbulbSlash })
 const ax = h('span', {class: 'switch-text-icon math-style'}, ['a', h('sup', {}, 'x')])
 const plus = h('span', { class: 'switch-text-icon' }, ['+'])

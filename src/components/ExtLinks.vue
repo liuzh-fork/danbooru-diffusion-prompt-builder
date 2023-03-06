@@ -18,13 +18,13 @@
   ----------------------------------------------------------------------------->
 
 <script setup lang="ts">
-import { faGithub } from '@fortawesome/pro-brands-svg-icons'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import {
-    faMessageBot,
+    faRobot,
     faMagnifyingGlassChart,
     faHouse,
-    faBookOpenCover,
-} from '@fortawesome/pro-solid-svg-icons'
+    faBookOpen,
+} from '@fortawesome/free-solid-svg-icons'
 import { ElTooltip, ElButton } from 'element-plus'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 </script>
@@ -50,7 +50,7 @@ D
         <ElTooltip content="群画图机器人" :show-after="750">
             <a href="https://bot.novelai.dev" target="_blank">
                 <ElButton link size="large">
-                    <FontAwesomeIcon :icon="faMessageBot" class="square-icon" />
+                    <FontAwesomeIcon :icon="faRobot" class="square-icon" />
                 </ElButton>
             </a>
         </ElTooltip>
@@ -67,7 +67,7 @@ D
             <a href="https://guide.novelai.dev" target="_blank">
                 <ElButton link size="large">
                     <FontAwesomeIcon
-                        :icon="faBookOpenCover"
+                        :icon="faBookOpen"
                         class="square-icon" />
                 </ElButton>
             </a>

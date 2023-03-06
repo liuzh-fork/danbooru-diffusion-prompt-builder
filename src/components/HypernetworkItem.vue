@@ -23,8 +23,8 @@ import { ElButton, ElCard, ElImage } from 'element-plus'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import {
     faCloudArrowDown,
-    faImageSlash,
-} from '@fortawesome/pro-regular-svg-icons'
+    faEyeSlash,
+} from '@fortawesome/free-solid-svg-icons'
 import type { Hypernetwork } from '../types/data'
 import ToggleableTag from './ToggleableTag.vue'
 
@@ -58,7 +58,7 @@ const downloadUrl = computed(() => {
             <ElImage :src="imageUrl" fit="cover" loading="lazy">
                 <template #error>
                     <div class="image-slot">
-                        <FontAwesomeIcon :icon="faImageSlash" size="lg" />
+                        <FontAwesomeIcon :icon="faEyeSlash" size="lg" />
                     </div>
                 </template>
             </ElImage>

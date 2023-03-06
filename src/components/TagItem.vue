@@ -27,8 +27,8 @@ import {
     faThumbsDown,
     faThumbsUp,
     faLink,
-    faImageSlash,
-} from '@fortawesome/pro-light-svg-icons'
+    faEyeSlash,
+} from '@fortawesome/free-solid-svg-icons'
 import TagPostCount from './TagPostCount.vue'
 import type { Tag } from '../types/data'
 import { useCartStore } from '../stores/cart'
@@ -128,7 +128,7 @@ function toggleNegative(tag: string = props.meta.key) {
             <ElImage :src="imageUrl" fit="cover" loading="lazy">
                 <template #error>
                     <div class="image-slot">
-                        <FontAwesomeIcon :icon="faImageSlash" size="lg" />
+                        <FontAwesomeIcon :icon="faEyeSlash" size="lg" />
                     </div>
                 </template>
             </ElImage>
