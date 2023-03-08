@@ -15,7 +15,7 @@ export default defineConfig({
         {
             ...VitePluginRadar({
                 analytics: {
-                    id: 'G-WYETBX79HJ',
+                    id: 'G-QZNSL6RDMZ',
                 },
             }),
             apply(config, { command }) {
